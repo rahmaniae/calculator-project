@@ -1,0 +1,98 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+}
+
+.container {
+    background-color: darkgray;
+    flex-shrink: 1;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 360px;
+    padding: 8px;
+}
+
+.container div {
+    margin-bottom: 4px;
+}
+
+.screen {
+    height: 25px;
+    flex-grow: 1;
+    border: 3px solid black;
+    margin: 0px 4px 5px;
+    background-color: rgb(201, 199, 199);
+    display: flex;
+    align-items: center;
+    padding: 0 4px 0 4px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 4;
+    flex-wrap: wrap;
+
+}
+
+
+.numbers{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 4;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    
+}
+
+.numbers div {
+    width: 28%;
+    margin: 4px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a7474;
+}
+
+.operators {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.operators div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px 4px 0px 4px;
+    flex-grow: 1;
+    background-color: #ce8416;
+    
+}
+
+.equal {
+    flex-grow: 1;
+    margin: 0px 4px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b63333;
+}
+
+.numbers div,
+.operators div,
+.equal{
+    cursor: pointer;
+}
